@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Cormorant+Garamond:wght@300&family=Nunito:wght@300&family=Orbitron:wght@700&family=Raleway:wght@200&family=Roboto&family=Source+Sans+Pro:wght@200&display=swap");
+@font-face {
+  font-family: "Sofia pro";
+  src: url("/assets/fonts/sofiapro-light.otf") format("opentype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  height: 130px;
+  width: 1640px;
+}
+@media (max-width: 320px) {
+  #header {
+    width: 290px;
+  }
+}
+
+#header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+}
+@media (max-width: 320px) {
+  #header-content {
+    width: 290px;
+  }
+}
+
+#logo {
+  height: 100%;
+  width: 145px;
+  display: flex;
+  align-items: center;
+}
+#logo > img {
+  height: 55px;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  width: 319px;
+  height: 100%;
+}
+
+.nav-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-btn > a {
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 40px;
+}
+.nav-btn > a:hover {
+  color: rgb(56, 56, 56);
+  border-bottom: 1px solid #F9D023;
+}
+
+#container {
+  width: 1640px;
+}
+@media (max-width: 320px) {
+  #container {
+    width: 290px;
+  }
+}
+
+#face {
+  position: relative;
+  height: 1080px;
+}
+
+#back-town-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/robert-bye-R-WtV-QyVnY-unsplash.png") no-repeat center;
+}
+
+#face-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+#face-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1110px;
+  height: 668px;
+}
+#face-content > h1, #face-content > p {
+  color: white;
+  text-align: center;
+}
+#face-content > h1 {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 115px;
+  margin-bottom: 23px;
+  margin-top: 60px;
+}
+#face-content > button {
+  width: 196px;
+  height: 48px;
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #F9D023;
+  margin-top: 79px;
+}
+
+#company-description {
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+#scroll-more {
+  color: white;
+  text-align: center;
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 55px;
+}
+
+/*# sourceMappingURL=styles.css.map */
