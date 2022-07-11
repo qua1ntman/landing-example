@@ -184,14 +184,20 @@
       <div id="contact-left">
         <h2>Contact</h2>
         <div class="underline yellow-border"></div>
-        <h2 class="email">Email us here:</span>
-        <h2 class="email link">info@marvelpowergroup.com</span>
+        <h3 class="email text">Email us here:</h3>
+        <h3 class="email link">info@marvelpowergroup.com</h3>
       </div>
       <div id="contact-right">
-        <h2>Stay in the loop by getting on our mailing list</h2>
-        <form action="">
-          <input id="name-input" name="name" type="text" min="2" required>
-          <input id="email-input" name="email" type="email" required>
+        <h3>Stay in the loop by getting on our mailing list</h3>
+        <form id='contact-form'>
+          <div class="input-container">
+            <label for="name">NAME *</label>
+            <input id="name-input" name="name" type="text" min="2" required>
+          </div>
+          <div class="input-container">
+            <label for="email">E-MAIL *</label>
+            <input id="email-input" name="email" type="email" required>
+          </div>
         </form>
         <button>SEND
           <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">

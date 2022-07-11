@@ -72,11 +72,14 @@ body {
   font-weight: 400;
   text-decoration: none;
   line-height: 40px;
+  border: none;
+  transition: border 0.5 ease-in-out;
 }
 .nav-btn > a:hover {
   cursor: pointer;
   color: rgb(56, 56, 56);
   border-bottom: 1px solid #F9D023;
+  border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
 #container {
@@ -451,6 +454,116 @@ body {
   align-self: flex-start;
   margin-top: 73px;
   width: 74%;
+}
+
+#contact {
+  background-color: #000000;
+  height: 782px;
+  width: 1640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-container {
+  width: 1110px;
+  display: flex;
+  gap: 116px;
+  margin-bottom: 185px;
+}
+
+#contact-left {
+  display: flex;
+  flex-direction: column;
+}
+#contact-left > h2 {
+  color: white;
+  align-self: flex-start;
+  font-family: "Alata", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 100px;
+  margin-bottom: 38px;
+}
+
+.email {
+  color: white;
+  align-self: flex-start;
+  font-family: "Sofia pro bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.email.text {
+  margin-top: 36px;
+}
+
+.email.link {
+  color: #F9D023;
+  border-bottom: 2px solid #F9D023;
+}
+
+#contact-right {
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+}
+#contact-right > h3 {
+  width: 70%;
+  color: white;
+  align-self: flex-start;
+  font-family: "Sofia pro bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  margin-bottom: 47px;
+  margin-top: 45px;
+}
+#contact-right > button {
+  width: 272px;
+  height: 48px;
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  align-self: flex-end;
+  text-align: center;
+  background-color: #F9D023;
+}
+#contact-right > button:hover {
+  cursor: pointer;
+}
+
+#contact-form {
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+}
+.input-container > input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  font-size: 30px;
+  padding-left: 90px;
+}
+.input-container > label {
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 20px;
+  color: #000000;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
