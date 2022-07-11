@@ -4,9 +4,153 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+  <title>Marvel</title>
 </head>
 <body>
-  
+  <header id="header">
+    <div id="logo"></div>
+
+    <nav id="menu">
+      <div class="nav-btn"><a href="#about">About</a></div>
+      <div class="nav-btn"><a href="#services">Services</a></div>
+      <div class="nav-btn"><a href="#contact">Contact</a></div>
+    </nav>
+  </header>
+  <main id="container">
+    <section id="face">
+      <div id="back-town-image"></div>
+      <div id="face-content">
+        <h1>Marvel Power Group</h1>
+        <p>Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors.</p>
+        <button>CONTACT US
+          <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
+            <path d="M14 2H20V4H14V2Z" fill="black"/>
+            <path d="M14 6H20V8H14V6Z" fill="black"/>
+            <path d="M0 6L0 4L6 4V6H0Z" fill="black"/>
+            <path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F6D330"/>
+          </svg>
+        </button>
+        <p>Scroll for more</p>
+      </div>
+    </section>
+    <section id="about">
+      <div id="about-container">
+        <h2>About</h2>
+        <div class="underline yellow-border"></div>
+        <div id="about-content">
+          <img src="" alt="">
+          <p>Our dynamic, solutions-oriented team brings decades of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership. We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.</p>
+        </div>
+      </div>
+    </section>
+    <section id="things">
+      <div id="things-container">
+        <h2>Our things</h2>
+        <div class="underline white-border"></div>
+        <div id="things-img-container">
+          <div>
+            <img src="" alt="">
+            <div class="thing-text">Roller things</div>
+          </div>
+          <div>
+            <img src="" alt="">
+            <div class="thing-text">Pipe things</div>
+          </div>
+          <div>
+            <img src="" alt="">
+            <div class="thing-text">Cube things</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="beautiful">
+      <div id="beautiful-container">
+        <h2>Beautiful</h2>
+        <div class="underline yellow-border"></div>
+        <div id="beautiful-slider">
+          <div id="arrow-left"></div>
+          <div id="images-block">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+          <div id="arrow-left"></div>
+        </div>
+        <p id="beautiful-description">
+          Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs. 
+        </p>
+      </div>
+    </section>
+    <section id="services">
+      <div id="beautiful-container">
+        <h2>Services</h2>
+        <div class="underline white-border"></div>
+        <p>Our clients are at the forefront of energy transition and innovation. Their task is complex: balance reliability and cost effectiveness with new customer demands, investment decisions, decarbonization goals and an evolving menu of new technologies. We understand the task and bring deep expertise to addressing these challenges.</p>
+        <div id="advantages">
+          <div class="advantage">
+            <h3>Enterprise Strategy</h3>
+            <ul>
+              <li>Procurement and investment diligence</li>
+              <li>Customer engagement and retention</li>
+              <li>Renewable, DER, and EV program structuring</li>
+              <li>Reliability planning and reporting</li>
+            </ul>
+            <div class="arrow"></div>
+          </div>
+          <div class="advantage">
+            <h3>Wholesale Power</h3>
+            <ul>
+              <li>Commodity advisory and RFPs</li>
+              <li>Energy, capacity, REC, RIN, and LCFS placement</li>
+              <li>Enterprise PPA structuring</li>
+              <li>Contract extensions and re-packaging</li>
+            </ul>
+            <div class="arrow"></div>
+          </div>
+          <div class="advantage">
+            <h3>Market Development</h3>
+            <ul>
+              <li>New venture setup</li>
+              <li>Demand planning and acquisition</li>
+              <li>Project development and regulatory support</li>
+              <li>Partnership structuring</li>
+            </ul>
+            <div class="arrow"></div>
+          </div>
+        </div>
+        <p>Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs.</p>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div id="contact-container">
+      <div id="contact-left">
+        <h2>Contact</h2>
+        <div class="underline yellow-border"></div>
+        <h2 class="email">Email us here:</span>
+        <h2 class="email link">info@marvelpowergroup.com</span>
+      </div>
+      <div id="contact-right">
+        <h2>Stay in the loop by getting on our mailing list</h2>
+        <form action="">
+          <input id="name-input" name="name" type="text" min="2" required>
+          <input id="email-input" name="email" type="email" required>
+        </form>
+        <button>SEND
+          <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
+            <path d="M14 2H20V4H14V2Z" fill="black"/>
+            <path d="M14 6H20V8H14V6Z" fill="black"/>
+            <path d="M0 6L0 4L6 4V6H0Z" fill="black"/>
+            <path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F6D330"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
