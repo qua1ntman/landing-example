@@ -3,6 +3,10 @@
   font-family: "Sofia pro";
   src: url("/assets/fonts/sofiapro-light.otf") format("opentype");
 }
+@font-face {
+  font-family: "Sofia pro bold";
+  src: url("/assets/fonts/Sofia Pro Bold.ttf") format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
@@ -70,6 +74,7 @@ body {
   line-height: 40px;
 }
 .nav-btn > a:hover {
+  cursor: pointer;
   color: rgb(56, 56, 56);
   border-bottom: 1px solid #F9D023;
 }
@@ -139,6 +144,9 @@ body {
   text-align: center;
   background-color: #F9D023;
   margin-top: 79px;
+}
+#face-content > button:hover {
+  cursor: pointer;
 }
 
 #company-description {
@@ -273,7 +281,7 @@ body {
 }
 
 .thing-text {
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -293,7 +301,7 @@ body {
   width: 1110px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 }
 #beautiful-container > h2 {
   align-self: flex-start;
@@ -322,6 +330,26 @@ body {
   height: 43px;
   position: absolute;
   top: calc(50% - 21.5px);
+  z-index: 3;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-right {
+  right: -54px;
+  transition: right 0.3s ease-in-out;
+}
+.arrow-right:hover {
+  right: -50px;
+}
+
+.arrow-left {
+  left: -54px;
+  transition: left 0.3s ease-in-out;
+}
+.arrow-left:hover {
+  left: -50px;
 }
 
 #beautiful-description {
@@ -331,6 +359,98 @@ body {
   font-size: 18px;
   line-height: 26px;
   font-weight: 300;
+}
+
+#services {
+  height: 1026px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9D023;
+}
+
+#services-container {
+  width: 1110px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+#services-container > h2 {
+  align-self: flex-start;
+  font-family: "Alata", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 100px;
+  margin-bottom: 50px;
+}
+#services-container > p {
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.services-fst-descr {
+  width: 74%;
+  align-self: flex-start;
+  margin: 45px 0 58px 0;
+}
+
+#advantages {
+  display: flex;
+  justify-content: space-between;
+  width: 98.5%;
+}
+
+.advantage {
+  width: 335px;
+  height: 288px;
+}
+.advantage > h3 {
+  font-family: "Sofia pro bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  width: 70%;
+  margin-bottom: 27px;
+}
+.advantage > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 21px;
+}
+.advantage > ul > li {
+  position: relative;
+  font-family: "Sofia pro", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  list-style-type: none;
+}
+.advantage > ul > li:before {
+  position: absolute;
+  left: -21px;
+  top: 7px;
+  content: "";
+  background: url("assets/images/RectangleWhite.png");
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+}
+
+.adv-arrow {
+  margin-left: 23px;
+  margin-top: 31px;
+}
+
+.services-snd-descr {
+  align-self: flex-start;
+  margin-top: 73px;
+  width: 74%;
 }
 
 /*# sourceMappingURL=styles.css.map */
