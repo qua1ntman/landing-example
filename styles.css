@@ -27,38 +27,49 @@ body {
   height: 130px;
   width: 1640px;
 }
-@media (max-width: 320px) {
+@media (max-width: 1000px) {
   #header {
-    width: 290px;
+    width: 320px;
+    height: 78px;
   }
 }
 
 #header-content {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 1110px;
 }
-@media (max-width: 320px) {
+@media (max-width: 1000px) {
   #header-content {
     width: 290px;
   }
 }
 
 #logo {
-  height: 100%;
-  width: 145px;
-  display: flex;
-  align-items: center;
-}
-#logo > img {
   height: 55px;
+  width: 145px;
+  align-self: center;
+}
+@media (max-width: 1000px) {
+  #logo {
+    height: 38px;
+    width: 100px;
+  }
 }
 
-#menu {
+.menu {
   display: flex;
   justify-content: space-between;
   width: 319px;
   height: 100%;
+}
+@media (max-width: 1000px) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    right: 400px;
+  }
 }
 
 .nav-btn {
@@ -83,15 +94,20 @@ body {
 #container {
   width: 1640px;
 }
-@media (max-width: 320px) {
+@media (max-width: 1000px) {
   #container {
-    width: 290px;
+    width: 320px;
   }
 }
 
 #face {
   position: relative;
   height: 1080px;
+}
+@media (max-width: 1000px) {
+  #face {
+    height: 520px;
+  }
 }
 
 #back-town-image {
@@ -149,12 +165,36 @@ body {
 #face-content > button:hover {
   cursor: pointer;
 }
+@media (max-width: 1000px) {
+  #face-content {
+    width: 290px;
+    height: 330px;
+    margin-bottom: 71px;
+  }
+  #face-content > h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+  #face-content > button {
+    margin-top: 46px;
+  }
+}
 
 #company-description {
   font-family: "Sofia pro", Arial, sans-serif;
   font-size: 25px;
   font-weight: 300;
   line-height: 35px;
+}
+@media (max-width: 1000px) {
+  #company-description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 #scroll-more {
@@ -165,6 +205,11 @@ body {
   font-size: 14px;
   margin-bottom: 55px;
 }
+@media (max-width: 1000px) {
+  #scroll-more {
+    display: none;
+  }
+}
 
 #about {
   height: 760px;
@@ -173,6 +218,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  #about {
+    height: 818px;
+    width: 320px;
+  }
 }
 
 #about-container {
@@ -189,18 +240,44 @@ body {
   line-height: 100px;
   margin-bottom: 51px;
 }
+@media (max-width: 1000px) {
+  #about-container {
+    width: 290px;
+    margin-bottom: 50px;
+  }
+  #about-container > h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}
 
 .underline {
   align-self: flex-start;
   width: 100px;
 }
+@media (max-width: 1000px) {
+  .underline {
+    width: 65px;
+  }
+}
 
 .yellow-border {
   border-bottom: 6px solid #F9D023;
 }
+@media (max-width: 1000px) {
+  .yellow-border {
+    border-bottom: 4px solid #F9D023;
+  }
+}
 
 .white-border {
   border-bottom: 6px solid white;
+}
+@media (max-width: 1000px) {
+  .white-border {
+    border-bottom: 4px solid white;
+  }
 }
 
 #about-content {
@@ -209,10 +286,17 @@ body {
   gap: 68px;
   margin-top: 55px;
 }
+@media (max-width: 1000px) {
+  #about-content {
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 37px;
+  }
+}
 
 .about-img {
-  width: 486px;
-  height: 315px;
+  width: 290px;
+  height: 180px;
 }
 
 #about-text {
@@ -228,9 +312,23 @@ body {
   line-height: 26px;
   font-weight: 300;
 }
+@media (max-width: 1000px) {
+  #about-text {
+    margin-right: 0;
+  }
+  #about-text > p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 
 .fst-ab-text {
   padding-right: 30px;
+}
+@media (max-width: 1000px) {
+  .fst-ab-text {
+    padding-right: 0;
+  }
 }
 
 #things {
@@ -240,6 +338,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1000px) {
+  #things {
+    width: 320px;
+    height: 1147px;
+  }
 }
 
 #things-container {
@@ -256,10 +360,29 @@ body {
   line-height: 100px;
   margin-bottom: 50px;
 }
+@media (max-width: 1000px) {
+  #things-container {
+    width: 290px;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  #things-container > h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+}
 
 #things-img-container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  #things-img-container {
+    height: 920px;
+    flex-direction: column;
+    margin-top: 32px;
+  }
 }
 
 .img-block {
@@ -280,6 +403,22 @@ body {
   width: 232px;
   height: 232px;
 }
+@media (max-width: 1000px) {
+  .img-block {
+    height: 290px;
+    width: 290px;
+    gap: 5px;
+    margin-top: 0;
+  }
+  .img-block > :first-child {
+    width: 194px;
+    height: 194px;
+  }
+  .img-block > :first-child > img {
+    width: 194px;
+    height: 194px;
+  }
+}
 
 .thing-text {
   font-family: "Alata", sans-serif;
@@ -288,6 +427,13 @@ body {
   font-size: 30px;
   line-height: 41px;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .thing-text {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 16px;
+  }
 }
 
 #beautiful {
@@ -311,6 +457,11 @@ body {
   font-weight: 400;
   line-height: 100px;
   margin-bottom: 50px;
+}
+@media (max-width: 1000px) {
+  #beautiful-container {
+    width: 290px;
+  }
 }
 
 #beautiful-slider {
@@ -392,6 +543,11 @@ body {
   font-size: 18px;
   line-height: 26px;
 }
+@media (max-width: 1000px) {
+  #services-container {
+    width: 290px;
+  }
+}
 
 .services-fst-descr {
   width: 74%;
@@ -468,6 +624,11 @@ body {
   display: flex;
   gap: 116px;
   margin-bottom: 185px;
+}
+@media (max-width: 1000px) {
+  #contact-container {
+    width: 290px;
+  }
 }
 
 #contact-left {
@@ -598,8 +759,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 21px;
+  height: auto;
 }
 .demo .menu-icon {
   transform: scale(1.5);
@@ -632,16 +793,15 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  width: 22px;
-  height: 12px;
+  width: 25px;
+  height: 6px;
 }
 .menu-icon span {
   position: absolute;
   display: block;
-  width: 100%;
-  height: 2px;
+  width: 16px;
+  height: 1px;
   background-color: #000000;
-  border-radius: 1px;
   transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
 }
 .menu-icon span:first-of-type {
@@ -657,12 +817,12 @@ body {
 .menu-icon.active span:first-of-type,
 .menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
   transform: rotate(45deg);
-  top: 5px;
+  top: 3.5px;
 }
 .menu-icon.active span:last-of-type,
 .menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
   transform: rotate(-45deg);
-  bottom: 5px;
+  bottom: 3.5px;
 }
 
 .hide {
