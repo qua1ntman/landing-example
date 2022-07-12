@@ -1,3 +1,43 @@
+class Data {
+  data = [
+    "assets/images/beautiful1.png",
+    "assets/images/beautiful2.png",
+    "assets/images/beautiful3.png",
+    "assets/images/beautiful4.png",
+    "assets/images/beautiful1.png",
+    "assets/images/beautiful2.png",
+    "assets/images/beautiful3.png",
+    "assets/images/beautiful4.png",
+    "assets/images/beautiful1.png",
+    "assets/images/beautiful2.png",
+    "assets/images/beautiful3.png",
+    "assets/images/beautiful4.png",
+    "assets/images/beautiful1.png",
+    "assets/images/beautiful2.png",
+    "assets/images/beautiful3.png",
+    "assets/images/beautiful4.png",
+  ]
+  index = 0
+
+  createSliderCards() {
+    const w = document.documentElement.clientWidth;
+    console.log(w);
+    let imgNum
+    if (w <= 320) {
+      imgNum = 1
+    } else {
+      imgNum = 4
+    }
+    const slider = document.getElementById("images-block")
+    slider.innerHTML = '' 
+    let node = ''
+    for (let i=this.index; i<this.index+imgNum; i++) {
+      node += `<img src=${this.data[i]} alt="city">`
+    }
+    slider.innerHTML = node 
+  }
+}
+
 class Menu {
   burger = document.getElementById('menu-btn')
   fullBurgerBtn = document.getElementsByClassName('demo')[0]
@@ -55,6 +95,25 @@ class Form {
 
 }
 
+const data = new Data()
+
+document.getElementById('arrow-img-left').addEventListener('click', () => {
+  if (data.index > 0) {
+    --data.index
+    data.createSliderCards()
+  }
+})
+document.getElementById('arrow-img-right').addEventListener('click', () => {
+  if (data.index < data.data.length-4) {
+    ++data.index
+    data.createSliderCards()
+  }
+})
+
+data.createSliderCards()
+
+
+
 const menu = new Menu()
 menu.burger.addEventListener('click', (e) => {
   menu.openMenu()
@@ -77,3 +136,6 @@ const form = new Form()
 form.sendBtn.addEventListener('click', () => form.sendFormData())
 
 menu.checkSize()
+
+document.addEventListener('click', (e) => console.log(e.target))
+

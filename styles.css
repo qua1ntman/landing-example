@@ -22,7 +22,6 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
 }
 
 #header {
@@ -548,6 +547,7 @@ body {
 #beautiful-slider {
   position: relative;
   margin: 55px 0 67px 0;
+  transition: opacity 0.3 ease-in-out;
 }
 @media (max-width: 1000px) {
   #beautiful-slider {
@@ -560,18 +560,19 @@ body {
 #images-block {
   display: flex;
   justify-content: space-between;
+  height: 213px;
 }
 #images-block > img {
   width: 255px;
   height: 213px;
 }
 @media (max-width: 1000px) {
+  #images-block {
+    height: 227px;
+  }
   #images-block > img {
     width: 272px;
     height: 227px;
-  }
-  #images-block > img:not(:first-child) {
-    display: none;
   }
 }
 
