@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Cormorant+Garamond:wght@300&family=Nunito:wght@300&family=Orbitron:wght@700&family=Raleway:wght@200&family=Roboto&family=Source+Sans+Pro:wght@200&display=swap");
 @font-face {
   font-family: "Sofia pro";
-  src: url("/assets/fonts/sofiapro-light.otf") format("opentype");
+  src: url("./assets/fonts/sofiapro-light.otf") format("opentype");
 }
 @font-face {
   font-family: "Sofia pro bold";
-  src: url("/assets/fonts/Sofia Pro Bold.ttf") format("truetype");
+  src: url("./assets/fonts/Sofia Pro Bold.ttf") format("truetype");
 }
 * {
   padding: 0;
@@ -752,7 +752,7 @@ body {
   left: -21px;
   top: 7px;
   content: "";
-  background: url("assets/images/RectangleWhite.png");
+  background: url("./assets/images/RectangleWhite.png");
   width: 6px;
   height: 6px;
   display: inline-block;
