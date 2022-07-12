@@ -17,7 +17,7 @@
     <div id="header-content">
       <img id="logo" src="/assets/images/logo.png" alt="logo">
   
-      <nav class="menu">
+      <nav id="nav" class="menu">
         <div class="nav-btn"><a href="#about">About</a></div>
         <div class="nav-btn"><a href="#services">Services</a></div>
         <div class="nav-btn"><a href="#contact">Contact</a></div>
@@ -25,7 +25,7 @@
 
       <div class="demo">
         <div class="menu-icon">
-          <input class="menu-icon__cheeckbox" type="checkbox" />
+          <input id="menu-btn" class="menu-icon__cheeckbox" type="checkbox" />
           <div>
             <span></span>
             <span></span>
@@ -45,7 +45,7 @@
         <div id="face-content">
           <h1>Marvel Power Group</h1>
           <p id="company-description">Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors.</p>
-          <button>CONTACT US
+          <button id="contact-btn">CONTACT US
             <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
               <path d="M14 2H20V4H14V2Z" fill="black"/>
@@ -196,15 +196,15 @@
         <h3>Stay in the loop by getting on our mailing list</h3>
         <form id='contact-form'>
           <div class="input-container">
-            <label for="name">NAME *</label>
-            <input id="name-input" name="name" type="text" min="2" required>
+            <label for="name-input">NAME *</label>
+            <input id="name-input" type="text" min="2" required>
           </div>
           <div class="input-container">
-            <label for="email">E-MAIL *</label>
-            <input id="email-input" name="email" type="email" required>
+            <label for="email-input">E-MAIL *</label>
+            <input id="email-input" ntype="email" required>
           </div>
         </form>
-        <button>SEND
+        <button id="send-btn">SEND
           <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
             <path d="M14 2H20V4H14V2Z" fill="black"/>
