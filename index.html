@@ -18,9 +18,9 @@
       <img id="logo" src="/assets/images/logo.png" alt="logo">
   
       <nav id="nav" class="menu">
-        <div class="nav-btn"><a href="#about">About</a></div>
-        <div class="nav-btn"><a href="#services">Services</a></div>
-        <div class="nav-btn"><a href="#contact">Contact</a></div>
+        <div class="nav-btn"><a class="nav-link" href="#about">About</a></div>
+        <div class="nav-btn"><a class="nav-link" href="#services">Services</a></div>
+        <div class="nav-btn"><a class="nav-link" href="#contact">Contact</a></div>
       </nav>
 
       <div class="demo">
@@ -45,15 +45,17 @@
         <div id="face-content">
           <h1>Marvel Power Group</h1>
           <p id="company-description">Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors.</p>
-          <button id="contact-btn">CONTACT US
-            <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
-              <path d="M14 2H20V4H14V2Z" fill="black"/>
-              <path d="M14 6H20V8H14V6Z" fill="black"/>
-              <path d="M0 6L0 4L6 4V6H0Z" fill="black"/>
-              <path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F6D330"/>
-            </svg>
-          </button>
+          <a id="contact-btn" href="#contact">
+            <button>CONTACT US
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
+                <path d="M14 2H20V4H14V2Z" fill="black"/>
+                <path d="M14 6H20V8H14V6Z" fill="black"/>
+                <path d="M0 6L0 4L6 4V6H0Z" fill="black"/>
+                <path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F6D330"/>
+              </svg>
+            </button>
+          </a>
         </div>
         <p id="scroll-more">Scroll for more</p>
       </div>
@@ -192,7 +194,7 @@
         <h3 class="email text">Email us here:</h3>
         <h3 class="email link">info@marvelpowergroup.com</h3>
       </div>
-      <div class="contact-right">
+      <div id="form-block" class="contact-right">
         <h3>Stay in the loop by getting on our mailing list</h3>
         <form id='contact-form'>
           <div class="input-container">
@@ -214,7 +216,7 @@
           </svg>
         </button>
       </div>
-      <div class="sent-contact hide">
+      <div id="after-sent-block" class="sent-contact hide">
         <h3>Thank you.<br>Your info has been successfully sent</h3>
         <p>Your can contact us <span>info@marvelpowergroup.com</span> if you need additional assistance</p>
       </div>

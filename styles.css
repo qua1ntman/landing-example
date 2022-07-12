@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -26,13 +30,13 @@ body {
   justify-content: center;
   z-index: 3;
   height: 130px;
-  width: 1640px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.2s linear;
 }
 @media (max-width: 1000px) {
   #header {
-    width: 320px;
+    width: 100%;
     height: 78px;
   }
 }
@@ -73,7 +77,6 @@ body {
 
 .menu {
   display: flex;
-  opacity: 0;
   justify-content: space-between;
   width: 319px;
   height: 100%;
@@ -83,6 +86,7 @@ body {
 @media (max-width: 1000px) {
   .menu {
     justify-content: flex-start;
+    opacity: 0;
     padding-top: 38px;
     gap: 23px;
     flex-direction: column;
@@ -91,7 +95,7 @@ body {
     margin-top: 78px;
     background-color: white;
     height: calc(100vh - 78px);
-    width: 320px;
+    width: 100%;
     align-items: center;
     padding-bottom: 166px;
   }
@@ -136,17 +140,18 @@ body {
 }
 
 #container {
-  width: 1640px;
+  width: 100%;
 }
 @media (max-width: 1000px) {
   #container {
-    width: 320px;
+    width: 100%;
   }
 }
 
 #face {
   position: relative;
   height: 1080px;
+  width: 100%;
 }
 @media (max-width: 1000px) {
   #face {
@@ -161,6 +166,7 @@ body {
   width: 100%;
   height: 100%;
   background: url("/assets/images/robert-bye-R-WtV-QyVnY-unsplash.png") no-repeat center;
+  background-size: cover;
 }
 
 #face-content-wrapper {
@@ -194,9 +200,14 @@ body {
   margin-bottom: 23px;
   margin-top: 60px;
 }
-#face-content > button {
+#face-content > a {
   position: relative;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 79px;
   z-index: 4;
+}
+#face-content > a > button {
   width: 196px;
   height: 48px;
   font-family: "Sofia pro", Arial, sans-serif;
@@ -205,10 +216,9 @@ body {
   font-size: 14px;
   text-align: center;
   background-color: #F9D023;
-  margin-top: 79px;
   border: none;
 }
-#face-content > button:hover {
+#face-content > a > button:hover {
   cursor: pointer;
 }
 @media (max-width: 1000px) {
@@ -224,7 +234,7 @@ body {
     margin-top: 0;
     margin-bottom: 17px;
   }
-  #face-content > button {
+  #face-content > a {
     margin-top: 45px;
   }
 }
@@ -266,7 +276,7 @@ body {
 
 #about {
   height: 760px;
-  width: 1640px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -275,7 +285,7 @@ body {
 @media (max-width: 1000px) {
   #about {
     height: 818px;
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -348,8 +358,14 @@ body {
 }
 
 .about-img {
-  width: 290px;
-  height: 180px;
+  width: 486px;
+  height: 315px;
+}
+@media (max-width: 1000px) {
+  .about-img {
+    width: 290px;
+    height: 180px;
+  }
 }
 
 #about-text {
@@ -394,7 +410,7 @@ body {
 }
 @media (max-width: 1000px) {
   #things {
-    width: 320px;
+    width: 100%;
     height: 1147px;
   }
 }
@@ -499,7 +515,7 @@ body {
 @media (max-width: 1000px) {
   #beautiful {
     height: 657px;
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -742,6 +758,7 @@ body {
 @media (max-width: 1000px) {
   .advantage {
     height: 245px;
+    width: auto;
   }
   .advantage > h3 {
     font-size: 25px;
@@ -754,7 +771,6 @@ body {
     padding-left: 14px;
   }
   .advantage > ul > li {
-    width: 80%;
     font-size: 14px;
     line-height: 16px;
   }
@@ -792,7 +808,7 @@ body {
 #contact {
   background-color: #000000;
   height: 782px;
-  width: 1640px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -800,7 +816,7 @@ body {
 @media (max-width: 1000px) {
   #contact {
     height: 663px;
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -945,7 +961,7 @@ body {
   border: none;
   border-radius: 0;
   font-size: 30px;
-  padding-left: 90px;
+  padding-left: 80px;
 }
 .input-container > label {
   font-family: "Sofia pro", Arial, sans-serif;
@@ -1034,7 +1050,6 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  width: 25px;
   height: 6px;
 }
 .menu-icon span {
