@@ -29,6 +29,7 @@ body {
 }
 @media (max-width: 1000px) {
   #header {
+    background-color: #000000;
     width: 320px;
     height: 78px;
   }
@@ -55,6 +56,8 @@ body {
   #logo {
     height: 38px;
     width: 100px;
+    filter: invert(100%) sepia(2%) saturate(14%) hue-rotate(314deg) brightness(104%) contrast(100%);
+    -webkit-filter: invert(100%) sepia(2%) saturate(14%) hue-rotate(314deg) brightness(104%) contrast(100%);
   }
 }
 
@@ -66,9 +69,17 @@ body {
 }
 @media (max-width: 1000px) {
   .menu {
+    justify-content: center;
+    gap: 23px;
     flex-direction: column;
     position: absolute;
-    right: 400px;
+    left: -15px;
+    margin-top: 78px;
+    background-color: white;
+    height: 442px;
+    width: 320px;
+    align-items: center;
+    padding-bottom: 166px;
   }
 }
 
@@ -78,6 +89,7 @@ body {
   align-items: center;
 }
 .nav-btn > a {
+  color: #000000;
   font-family: "Sofia pro", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -89,6 +101,18 @@ body {
   color: rgb(56, 56, 56);
   border-bottom: 1px solid #F9D023;
   border-top: 1px solid rgba(0, 0, 0, 0);
+}
+@media (max-width: 1000px) {
+  .nav-btn {
+    height: 51px;
+  }
+  .nav-btn > a {
+    font-family: "Sofia pro", Arial, sans-serif;
+    font-size: 40px;
+  }
+  .nav-btn > a:hover {
+    line-height: 38px;
+  }
 }
 
 #container {
@@ -126,7 +150,6 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -152,6 +175,8 @@ body {
   margin-top: 60px;
 }
 #face-content > button {
+  position: relative;
+  z-index: 4;
   width: 196px;
   height: 48px;
   font-family: "Sofia pro", Arial, sans-serif;
@@ -506,13 +531,25 @@ body {
 }
 
 .arrow {
-  height: 43px;
   position: absolute;
   top: calc(50% - 21.5px);
   z-index: 3;
 }
+.arrow > img {
+  height: 43px;
+  width: 14px;
+}
 .arrow:hover {
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .arrow {
+    top: calc(50% - 11.5px);
+  }
+  .arrow > img {
+    height: 23px;
+    width: 9px;
+  }
 }
 
 .arrow-right {
@@ -522,6 +559,14 @@ body {
 .arrow-right:hover {
   right: -50px;
 }
+@media (max-width: 1000px) {
+  .arrow-right {
+    right: -10px;
+  }
+  .arrow-right:hover {
+    right: -8px;
+  }
+}
 
 .arrow-left {
   left: -54px;
@@ -529,6 +574,14 @@ body {
 }
 .arrow-left:hover {
   left: -50px;
+}
+@media (max-width: 1000px) {
+  .arrow-left {
+    left: -10px;
+  }
+  .arrow-left:hover {
+    left: -8px;
+  }
 }
 
 #beautiful-description {
@@ -716,6 +769,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1000px) {
+  #contact {
+    height: 663px;
+    width: 320px;
+  }
+}
 
 #contact-container {
   width: 1110px;
@@ -725,7 +784,10 @@ body {
 }
 @media (max-width: 1000px) {
   #contact-container {
+    flex-direction: column;
     width: 290px;
+    gap: 10px;
+    margin-bottom: 47px;
   }
 }
 
@@ -743,6 +805,16 @@ body {
   line-height: 100px;
   margin-bottom: 38px;
 }
+@media (max-width: 1000px) {
+  #contact-left {
+    width: 100%;
+    height: auto;
+  }
+  #contact-left > h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+}
 
 .email {
   color: white;
@@ -752,14 +824,32 @@ body {
   font-size: 40px;
   line-height: 42px;
 }
+@media (max-width: 1000px) {
+  .email {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
 
 .email.text {
   margin-top: 36px;
 }
+@media (max-width: 1000px) {
+  .email.text {
+    margin-top: 21px;
+  }
+}
 
 .email.link {
   color: #F9D023;
-  border-bottom: 2px solid #F9D023;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+@media (max-width: 1000px) {
+  .email.link {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
 }
 
 .contact-right {
@@ -792,6 +882,23 @@ body {
 .contact-right > button:hover {
   cursor: pointer;
 }
+@media (max-width: 1000px) {
+  .contact-right {
+    width: 290px;
+  }
+  .contact-right > h3 {
+    width: 65%;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    margin-top: 36px;
+  }
+  .contact-right > button {
+    width: 196px;
+    height: 48px;
+    letter-spacing: 0.6px;
+  }
+}
 
 #contact-form {
   width: 100%;
@@ -822,6 +929,11 @@ body {
   left: 20px;
   color: #000000;
   z-index: 2;
+}
+@media (max-width: 1000px) {
+  .input-container {
+    margin-bottom: 10px;
+  }
 }
 
 .sent-contact {
@@ -866,7 +978,7 @@ body {
 
 .menu-icon {
   position: relative;
-  width: 50px;
+  width: 13px;
   height: 50px;
   cursor: pointer;
 }
@@ -915,7 +1027,7 @@ body {
 .menu-icon.active span:first-of-type,
 .menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
   transform: rotate(45deg);
-  top: 3.5px;
+  top: 2px;
 }
 .menu-icon.active span:last-of-type,
 .menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
