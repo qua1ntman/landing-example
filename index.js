@@ -12,11 +12,13 @@ class Menu {
       this.logo.classList.add('white-in-menu')
       this.header.classList.add('black-header')
       this.contactBtn.classList.add('fixed')
+      document.body.style.overflowY = 'hidden'
     } else {
       this.nav.classList.remove('open')
       this.logo.classList.remove('white-in-menu')
       this.header.classList.remove('black-header')
       this.contactBtn.classList.remove('fixed')
+      document.body.style.overflowY = 'auto'
     }
   }
   
@@ -24,10 +26,8 @@ class Menu {
     const w = document.documentElement.clientWidth;
     if (w <= 320) {
       this.fullBurgerBtn.classList.remove('hide')
-      this.nav.classList.add('hide')
     } else {
       this.fullBurgerBtn.classList.add('hide')
-      this.nav.classList.remove('hide')
     }
   }
 }
