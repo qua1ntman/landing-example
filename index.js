@@ -20,18 +20,11 @@ class Data {
   index = 0
 
   createSliderCards() {
-    const w = document.documentElement.clientWidth;
-    console.log(w);
-    let imgNum
-    if (w <= 320) {
-      imgNum = 1
-    } else {
-      imgNum = 4
-    }
+
     const slider = document.getElementById("images-block")
     slider.innerHTML = '' 
     let node = ''
-    for (let i=this.index; i<this.index+imgNum; i++) {
+    for (let i=this.index; i<this.index+4; i++) {
       node += `<img src=${this.data[i]} alt="city">`
     }
     slider.innerHTML = node 
