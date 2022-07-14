@@ -455,6 +455,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  #about-text {
+    width: auto;
+  }
   #about-text > p {
     font-size: 14px;
     line-height: 24px;
