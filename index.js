@@ -55,14 +55,7 @@ class Menu {
     }
   }
   
-  checkSize() {
-    const w = document.documentElement.clientWidth;
-    if (w <= 320) {
-      this.fullBurgerBtn.classList.remove('hide')
-    } else {
-      this.fullBurgerBtn.classList.add('hide')
-    }
-  }
+
 }
 
 class Form {
@@ -127,8 +120,3 @@ menu.contactBtn.addEventListener('click', () => {
 
 const form = new Form()
 form.sendBtn.addEventListener('click', () => form.sendFormData())
-
-menu.checkSize()
-
-document.addEventListener('click', (e) => console.log(e.target))
-

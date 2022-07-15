@@ -201,6 +201,11 @@ body {
     justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  #face-content-wrapper {
+    justify-content: flex-end;
+  }
+}
 
 #face-content {
   display: flex;
@@ -569,6 +574,7 @@ body {
   gap: 7px;
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
@@ -585,7 +591,6 @@ body {
 }
 .img-block:hover > :first-child {
   flex-direction: row;
-  justify-content: center;
   height: 105px;
   width: 300px;
 }
@@ -1145,8 +1150,8 @@ body {
 @media (max-width: 768px) {
   #contact-container {
     width: 290px;
-    margin-bottom: 47px;
-    justify-content: space-around;
+    gap: 17px;
+    justify-content: flex-start;
     height: 100%;
   }
 }
@@ -1176,7 +1181,8 @@ body {
 @media (max-width: 768px) {
   #contact-left {
     width: 100%;
-    height: auto;
+    height: 223px;
+    margin-top: 25px;
   }
   #contact-left > h2 {
     font-size: 40px;
@@ -1201,7 +1207,8 @@ body {
 }
 @media (max-width: 768px) {
   .email {
-    font-size: 25px;
+    align-self: flex-start;
+    font-size: 24px;
     line-height: 35px;
   }
 }
@@ -1272,10 +1279,12 @@ body {
   }
   .contact-right > h3 {
     width: 65%;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 35px;
     margin-bottom: 25px;
     margin-top: 36px;
+    text-align: left;
+    align-self: flex-start;
   }
   .contact-right > button {
     width: 196px;
@@ -1378,7 +1387,7 @@ body {
 }
 
 .demo {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 21px;
@@ -1386,6 +1395,11 @@ body {
 }
 .demo .menu-icon {
   transform: scale(1.5);
+}
+@media (max-width: 768px) {
+  .demo {
+    display: flex;
+  }
 }
 
 .menu-icon {
