@@ -4,9 +4,256 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Nunito:wght@300&family=Orbitron:wght@700&family=Raleway:wght@200&family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <title>Marvel</title>
 </head>
 <body>
+  <header id="header">
+
+    <div id="header-content">
+      <img id="logo" src="./assets/images/logo.png" alt="logo">
   
+      <nav id="nav" class="menu">
+        <div class="nav-btn"><a class="nav-link" href="#about">About</a></div>
+        <div class="nav-btn"><a class="nav-link" href="#services">Services</a></div>
+        <div class="nav-btn"><a class="nav-link" href="#contact">Contact</a></div>
+      </nav>
+
+      <div class="demo">
+        <div class="menu-icon">
+          <input id="menu-btn" class="menu-icon__cheeckbox" type="checkbox" />
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main id="container">
+
+    <section id="face">
+      <div id="back-town-image"></div>
+      <div id="face-content-wrapper">
+        <div id="face-content">
+          <h1>Marvel Power Group</h1>
+          <p id="company-description">Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors.</p>
+          <a id="contact-btn" href="#contact">
+            <button>CONTACT US
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
+                <path d="M14 2H20V4H14V2Z" fill="black"/>
+                <path d="M14 6H20V8H14V6Z" fill="black"/>
+                <path d="M0 6L0 4L6 4V6H0Z" fill="black"/>
+                <path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F6D330"/>
+              </svg>
+            </button>
+          </a>
+        </div>
+        <p id="scroll-more">Scroll for more</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div id="about-container">
+        <h2>About Us</h2>
+        <div class="underline yellow-border"></div>
+        <div id="about-content">
+          <img class="about-img" src="./assets/images/2438 2.png" alt="city image">
+          <div id="about-text">
+            <p class="fst-ab-text">Our dynamic, solutions-oriented team brings decades of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. 
+            <p class="snd-ab-text">We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership.</p>
+            <p class="snd-ab-text">We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="things">
+      <div id="things-container">
+        <h2>Our things</h2>
+        <div class="underline white-border"></div>
+        <div id="things-img-container">
+          <div class="img-block">
+            <div>
+              <div>
+                <img src="./assets/images/thing1.png" alt="detail">
+              </div>
+              <div class="thing-text">Roller things</div>
+            </div>
+            <div class="things-inside-things">
+              <p>First thing</p>
+              <p>Second thing</p>
+              <p>Third thing</p>
+              <div>
+                <p>More</p>
+                <div class="arrow-tail"></div>
+                <div class="arrow-head"></div>
+              </div>
+            </div>
+          </div>
+          <div class="img-block">
+            <div>
+              <div>
+                <img src="./assets/images/thing2.png" alt="detail">
+              </div>
+              <div class="thing-text">Pipe things</div>
+            </div>
+            <div class="things-inside-things">
+              <p>First thing</p>
+              <p>Second thing</p>
+              <p>Third thing</p>
+              <div>
+                <p>More</p>
+                <div class="arrow-tail"></div>
+                <div class="arrow-head"></div>
+              </div>
+            </div>
+          </div>
+          <div class="img-block">
+            <div>
+              <div>
+                <img src="./assets/images/thing3.png" alt="detail">
+              </div>
+              <div class="thing-text">Cube things</div>
+            </div>
+            <div class="things-inside-things">
+              <p>First thing</p>
+              <p>Second thing</p>
+              <p>Third thing</p>
+              <div>
+                <p>More</p>
+                <div class="arrow-tail"></div>
+                <div class="arrow-head"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beautiful">
+      <div id="beautiful-container">
+        <h2>Beautiful</h2>
+        <div class="underline yellow-border"></div>
+        <div id="beautiful-slider">
+          <div class="arrow arrow-left">
+            <img id="arrow-img-left" src="./assets/images/Vector_left.png" alt="navigarion arrow">            
+          </div>
+          <div id="images-block">
+          </div>
+          <div class="arrow arrow-right">
+            <img id="arrow-img-right" src="./assets/images/Vector_right.png" alt="navigarion arrow">
+          </div>
+        </div>
+        <p id="beautiful-description">
+          Our clients are time constrained and under‑resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs. 
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div id="services-container">
+        <h2>Services</h2>
+        <div class="underline white-border"></div>
+        <p class="services-fst-descr">Our clients are at the forefront of energy transition and innovation. Their task is complex: balance reliability and cost effectiveness with new customer demands, investment decisions, decarbonization goals and an evolving menu of new technologies. We understand the task and bring deep expertise to addressing these challenges.</p>
+        <div id="advantages">
+          <div class="advantage">
+            <h3>Enterprise Strategy</h3>
+            <ul>
+              <li>Procurement and investment diligence</li>
+              <li>Customer engagement and retention</li>
+              <li>Renewable, DER, and EV program structuring</li>
+              <li>Reliability planning and reporting</li>
+            </ul>
+            <div class="adv-arrow">
+              <svg width="45" height="12" viewBox="0 0 45 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="5" width="33" height="2" fill="white"/>
+                <path d="M38 1L43 6L38 11" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="advantage">
+            <h3>Wholesale Power</h3>
+            <ul>
+              <li>Commodity advisory and RFPs</li>
+              <li>Energy, capacity, REC, RIN, and LCFS placement</li>
+              <li>Enterprise PPA structuring</li>
+              <li>Contract extensions and re-packaging</li>
+            </ul>
+            <div class="adv-arrow">
+              <svg width="45" height="12" viewBox="0 0 45 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="5" width="33" height="2" fill="white"/>
+                <path d="M38 1L43 6L38 11" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="advantage">
+            <h3>Market Development</h3>
+            <ul>
+              <li>New venture setup</li>
+              <li>Demand planning and acquisition</li>
+              <li>Project development and regulatory support</li>
+              <li>Partnership structuring</li>
+            </ul>
+            <div class="adv-arrow">
+              <svg width="45" height="12" viewBox="0 0 45 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="5" width="33" height="2" fill="white"/>
+                <path d="M38 1L43 6L38 11" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <p class="services-snd-descr">Our clients are time constrained and under‑resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+
+    <div id="contact-container">
+      <div id="contact-left">
+        <h2>Contact</h2>
+        <div class="underline yellow-border"></div>
+        <h3 class="email text">Email us here:</h3>
+        <h3 class="email link">info@marvelpowergroup.com</h3>
+      </div>
+      <div id="form-block" class="contact-right">
+        <h3>Stay in the loop by getting on our mailing list</h3>
+        <form id='contact-form'>
+          <div class="input-container">
+            <label for="name-input">NAME *</label>
+            <input id="name-input" type="text" min="2" required>
+          </div>
+          <div class="input-container">
+            <label for="email-input">E-MAIL *</label>
+            <input id="email-input" ntype="email" required>
+          </div>
+        </form>
+        <button id="send-btn">SEND
+          <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black"/>
+            <path d="M14 2H20V4H14V2Z" fill="black"/>
+            <path d="M14 6H20V8H14V6Z" fill="black"/>
+            <path d="M0 6L0 4L6 4V6H0Z" fill="black"/>
+            <path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F6D330"/>
+          </svg>
+        </button>
+      </div>
+      <div id="after-sent-block" class="sent-contact hide">
+        <h3>Thank you.<br>Your info has been successfully sent</h3>
+        <p>Your can contact us <span>info@marvelpowergroup.com</span> if you need additional assistance</p>
+      </div>
+    </div>
+
+  </footer>
 </body>
 </html>
